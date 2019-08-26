@@ -18,6 +18,9 @@
     <ClCompile Include="main.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="memory.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sequence.h">
@@ -27,6 +30,9 @@
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="block.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
