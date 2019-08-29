@@ -1,4 +1,5 @@
 #include "defs.h"
+#include "type_of_value.h"
 
 /**	Блок последовательности.
 */

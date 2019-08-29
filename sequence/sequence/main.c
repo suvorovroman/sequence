@@ -4,20 +4,10 @@
 
 void main(void)
 {
-	jmp_buf x;
-	size_t s;
-	struct memory m;
+	struct value_type t;
+	struct sequence s;
 
-	initialize_memory(&m);
-
-	if (setjmp(x))
-	{
-		printf("failed to allocated memore of size %zd\n", s);
-		printf("allocated totally %zd\n", m.allocated);
-		return;
-	}
-
-	for (s = 1;; s <<= 1)
-		allocate_memory(&m, s, x);
-
+	t.tag = CHARACTER_TYPE;
+	t.descriptor.d_CHARACTER_TYPE.size = 10;
+	initialize_sequence(&s, &t);
 }

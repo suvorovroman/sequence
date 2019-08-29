@@ -138,12 +138,14 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="memory.c" />
+    <ClCompile Include="sequence.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="block.h" />
     <ClInclude Include="defs.h" />
     <ClInclude Include="memory.h" />
     <ClInclude Include="sequence.h" />
+    <ClInclude Include="value_type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
