@@ -43,3 +43,10 @@ struct block* chain_block(unsigned int _s, struct block* _b, exception _x);
 
 struct block* unchain_block(struct block* _b);
 
+struct value_pointer
+{
+	void* base;
+	unsigned int offset;
+};
+
+struct value_pointer append_value(struct block* _b, unsigned int _s, struct value_pointer *_v);
