@@ -39,7 +39,7 @@ struct block
 	void* value;	
 };
 
-struct block* chain_block(unsigned int _s, struct block* _b, jmpbuf _x);
+struct block* chain_block(unsigned int _s, struct block* _b, exception _x);
 
 struct block* unchain_block(struct block* _b);
 
