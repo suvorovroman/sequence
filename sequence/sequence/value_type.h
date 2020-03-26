@@ -17,5 +17,5 @@ struct descriptor_of_CHARACTER_TYPE
 
 struct type_of_value
 {
-	base_value_type tag;
+	enum base_value_type tag;
 };

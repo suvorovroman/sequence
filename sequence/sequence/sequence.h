@@ -1,10 +1,10 @@
 #include "block.h"
-#include <setjmp.h>
+#include "value_type.h"
 
 struct sequence
 {
 	struct block* data;
-	struct value_type type;
+	struct type_of_value type;
 };
 
 /**	\brief	»нициализировать последовательность значений.
