@@ -56,4 +56,4 @@ struct block
 *	\param[in]	_x	Метка перехода, когда невозможно выделить память для нового блока.
 *	\return	Указатель на новый головной блок цепочки.
 */
-struct block* chain_block(struct block* _с, unsigned int _s, exception _x);
+struct block* chain_block(struct block* _с, unsigned int _s, xlabel _x);
