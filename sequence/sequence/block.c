@@ -1,4 +1,13 @@
 #include "block.h"
+#include "memory.h"
+
+static unsigned int evaluate_size_exponent(unsigned int _s)
+{
+  unsigned int e;
+  
+  for(e = 0; _s; _s >>= 1, e++);
+  return e;
+}
 
 struct block* chain_block(struct block *_c, unsigned int _s, xlabel _x)
 {
